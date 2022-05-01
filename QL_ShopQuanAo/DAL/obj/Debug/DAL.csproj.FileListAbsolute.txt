@@ -1,0 +1,7 @@
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\bin\Debug\DAL.dll
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\bin\Debug\DAL.pdb
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\bin\Debug\DTO.dll
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\bin\Debug\DTO.pdb
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\obj\Debug\DAL.dll
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DAL\obj\Debug\DAL.pdb

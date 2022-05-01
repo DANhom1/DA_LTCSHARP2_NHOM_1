@@ -1,0 +1,5 @@
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\bin\Debug\Custom.dll
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\bin\Debug\Custom.pdb
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.dll
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.pdb
+C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.csprojResolveAssemblyReference.cache
