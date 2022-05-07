@@ -3,3 +3,8 @@ C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_S
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DTO\bin\Debug\DTO.pdb
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DTO\obj\Debug\DTO.dll
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\DTO\obj\Debug\DTO.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.dll.config
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.pdb

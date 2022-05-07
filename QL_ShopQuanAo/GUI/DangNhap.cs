@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using BLL;
 
 namespace GUI
 {
     public partial class DangNhap : Form
     {
+        QLQADataContext ql = new QLQADataContext();
+        //int quyen = 1;
+        BLLTaiKhoan bllTaiKhoan = new BLLTaiKhoan();
+
         public DangNhap()
         {
             InitializeComponent();
         }
-
+        
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -32,6 +37,46 @@ namespace GUI
         private void butonQuanAo2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public TAIKHOAN taikhoan;
+        //public TAIKHOAN taikhoanNV;
+        public THONGTINTAIKHOAN tttk;
+        private void butonQuanAo1_Click(object sender, EventArgs e)
+        {   
+            if(string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtUsername.Select();
+                return;
+            }
+            TAIKHOAN tk = ql.TAIKHOANs.SingleOrDefault(t => t.TENTK == txtUsername.Text && t.MATKHAU == txtPassword.Text);
+            //TAIKHOAN ktq = ql.TAIKHOANs.SingleOrDefault(t => t.MATK == tk.MATK && t.MAQUYEN==taikhoan.MAQUYEN);
+            if(tk!=null)
+            {
+                //if (ktq != null)
+                //{
+                    //MessageBox.Show("Đăng nhập thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    taikhoan = tk;
+                    tttk = ql.THONGTINTAIKHOANs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
+                    //ThongTinTaiKhoan.matk = tttk.MATK;
+                    this.Dispose();
+                    //ManHinhAdmin f = new ManHinhAdmin();
+                    //f.ShowDialog();
+                    //this.Dispose();
+                //}
+                //else
+                //{
+                //    taikhoan = tk;
+                //    tttk = ql.THONGTINTAIKHOANs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
+                //    this.Dispose();
+                //}
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtUsername.Select();
+                return;
+            }
         }
     }
 }

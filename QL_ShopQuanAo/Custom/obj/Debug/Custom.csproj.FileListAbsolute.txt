@@ -3,3 +3,8 @@ C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_S
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.dll
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.pdb
 C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\Custom\obj\Debug\Custom.csprojResolveAssemblyReference.cache
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\bin\Debug\Custom.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\bin\Debug\Custom.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.csprojResolveAssemblyReference.cache

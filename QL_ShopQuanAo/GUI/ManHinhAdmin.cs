@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
 
 namespace GUI
 {
     public partial class ManHinhAdmin : Form
     {
+        
+        BLLTaiKhoan bllTK = new BLLTaiKhoan();
+        QLQADataContext qlqa = new QLQADataContext();
         public ManHinhAdmin()
         {
             InitializeComponent();
@@ -40,6 +45,42 @@ namespace GUI
             {
                 frm.Activate();
             }
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinTaiKhoan frm = new ThongTinTaiKhoan();
+            frm.MdiParent=this;
+            
+            frm.Show();
+        }
+
+        private void ManHinhAdmin_Load(object sender, EventArgs e)
+        {
+            var f = new DangNhap();
+            f.ShowDialog();
+            TAIKHOAN taikhoan = f.taikhoan;
+            //BLLTaiKhoan bll = new BLLTaiKhoan();
+            MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
+            label1.Text = String.Format("QUẢN LÝ: {0}", taikhoan.TENTK);
+            ThongTinTaiKhoan.matk = taikhoan.MATK;
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HoaDon f = new HoaDon();
+            f.ShowDialog();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SanPham f = new SanPham();
+            f.ShowDialog();
         }
     }
 }

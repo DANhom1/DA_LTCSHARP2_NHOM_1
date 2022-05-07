@@ -95,6 +95,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TienKhach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +149,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinTaiKhoan.resx">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TienKhach.resx">
       <DependentUpon>TienKhach.cs</DependentUpon>
     </EmbeddedResource>

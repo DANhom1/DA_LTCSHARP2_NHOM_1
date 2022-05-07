@@ -18,7 +18,7 @@ namespace BLL
         {
             return dalhoadon.LoadHoaDon();
         }
-        public void ThemHoaDon(DateTime ngTao, float thanhToan, String tinhTrang, String maKH, string maNV)
+        public void ThemHoaDon(string ngTao, float thanhToan, string tinhTrang, string maKH, string maNV)
         {
             dalhoadon.ThemHoaDon( ngTao, thanhToan, tinhTrang, maKH, maNV);
         }
@@ -26,7 +26,7 @@ namespace BLL
         {
             dalhoadon.XoaHoaDon(maHD);
         }
-        public void SuaHoaDon(int maHD, DateTime ngTao, float thanhToan, String tinhTrang, String maKH, string maNV)
+        public void SuaHoaDon(int maHD, string ngTao, float thanhToan, String tinhTrang, String maKH, string maNV)
         {
             dalhoadon.SuaHoaDon( maHD, ngTao, thanhToan, tinhTrang, maKH, maNV);
         }

@@ -12,7 +12,7 @@ namespace DTO.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -30,6 +30,17 @@ namespace DTO.Properties {
         public string QL_ShopQuanAoConnectionString {
             get {
                 return ((string)(this["QL_ShopQuanAoConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PHUONGTRAN\\PHUONG;Initial Catalog=QL_ShopQuanAo;User ID=sa;Password=1" +
+            "23")]
+        public string QL_ShopQuanAoConnectionString1 {
+            get {
+                return ((string)(this["QL_ShopQuanAoConnectionString1"]));
             }
         }
     }

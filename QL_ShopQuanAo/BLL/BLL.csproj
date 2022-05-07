@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="BLLDanhMuc.cs" />
     <Compile Include="BLLHoaDon.cs" />
+    <Compile Include="BLLSanPham.cs" />
+    <Compile Include="BLLTaiKhoan.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

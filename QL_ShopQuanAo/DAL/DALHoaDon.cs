@@ -28,10 +28,11 @@ namespace DAL
             });
             return kqnew.ToList<View_HoaDon>();
         }
-        public void ThemHoaDon(DateTime ngTao,float thanhToan,String tinhTrang,String maKH,string maNV )
+        public void ThemHoaDon(string ngTao,float thanhToan, string tinhTrang, string maKH, string maNV)
         {
             HOADON hd = new HOADON();
-            hd.NGTAO = ngTao;
+            //hd.MAHD = mahd;
+            hd.NGTAO =DateTime.Parse(ngTao);
             hd.THANHTOAN=thanhToan;
             hd.TINHTRANG=tinhTrang;
             hd.MAKH=maKH;
@@ -45,11 +46,11 @@ namespace DAL
             qlqa.HOADONs.DeleteOnSubmit(xoa);
             qlqa.SubmitChanges();
         }
-        public void SuaHoaDon(int maHD,DateTime ngTao,float thanhToan,String tinhTrang,String maKH,string maNV )
+        public void SuaHoaDon(int maHD,string ngTao,float thanhToan,string tinhTrang,string maKH,string maNV )
         {
             HOADON hd = new HOADON();
             var sua = qlqa.HOADONs.Single(t => t.MAHD == maHD);
-            sua.NGTAO = ngTao;
+            sua.NGTAO = DateTime.Parse(ngTao);
             sua.THANHTOAN=thanhToan;
             sua.TINHTRANG=tinhTrang;
             sua.MAKH=maKH;
