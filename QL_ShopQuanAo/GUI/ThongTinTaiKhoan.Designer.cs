@@ -140,6 +140,7 @@
             this.btnCapNhat.TabIndex = 10;
             this.btnCapNhat.Text = "Cập Nhật Thông Tin";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // label6
             // 

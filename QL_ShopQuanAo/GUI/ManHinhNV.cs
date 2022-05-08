@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
+using GUI;
 
 namespace GUI
 {
-    public partial class    ManHinhNV : Form
+    public partial class  ManHinhNV : Form
     {
         public ManHinhNV()
         {
@@ -22,13 +23,14 @@ namespace GUI
         QLQADataContext qlqa = new QLQADataContext();
         private void ManHinhNV_Load(object sender, EventArgs e)
         {
-            var f = new DangNhap();
-            f.ShowDialog();
-            TAIKHOAN taikhoan = f.taikhoan;
-            //BLLTaiKhoan bll = new BLLTaiKhoan();
-            MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
-            label1.Text = String.Format("NHANVIEN: {0}", taikhoan.TENTK);
-            ThongTinTaiKhoan.matk = taikhoan.MATK;
+            MessageBox.Show("Xin Chào: " + ManHinhAdmin.tentk);
+            label1.Text = String.Format("NHÂN VIÊN: {0}", ManHinhAdmin.tentk);
+            ThongTinTaiKhoan.matk = ManHinhAdmin.matk;
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
     }

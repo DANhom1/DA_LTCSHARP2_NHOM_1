@@ -9,14 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
+using GUI;
 
 namespace GUI
 {
     public partial class ManHinhAdmin : Form
     {
-        
         BLLTaiKhoan bllTK = new BLLTaiKhoan();
         QLQADataContext qlqa = new QLQADataContext();
+        public static string matk;
+        public static string tentk;
+        public static string tenhienthi;
         public ManHinhAdmin()
         {
             InitializeComponent();
@@ -60,10 +63,29 @@ namespace GUI
             var f = new DangNhap();
             f.ShowDialog();
             TAIKHOAN taikhoan = f.taikhoan;
-            //BLLTaiKhoan bll = new BLLTaiKhoan();
-            MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
-            label1.Text = String.Format("QUẢN LÝ: {0}", taikhoan.TENTK);
-            ThongTinTaiKhoan.matk = taikhoan.MATK;
+            if(f.taikhoan.MAQUYEN==1)
+            {
+                MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
+                label1.Text = String.Format("QUẢN LÝ: {0}", taikhoan.TENTK);
+                tenhienthi = taikhoan.TENTK;
+                ThongTinTaiKhoan.matk = taikhoan.MATK;
+            }
+            else
+            {
+                //ManHinhNV a = new ManHinhNV();
+                ////MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
+                //tentk = taikhoan.TENTK;
+                //matk = taikhoan.MATK;
+                //a.ShowDialog();
+                //this.Dispose();
+                MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
+                label1.Text = String.Format("NHÂN VIÊN: {0}", taikhoan.TENTK);
+                tenhienthi = taikhoan.TENTK;
+                nhânViênToolStripMenuItem.Enabled = false;
+                danhMụcToolStripMenuItem.Enabled = false;
+                thốngKêToolStripMenuItem.Enabled = false;
+                ThongTinTaiKhoan.matk = taikhoan.MATK;
+            }
         }
 
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,6 +102,20 @@ namespace GUI
         private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SanPham f = new SanPham();
+            f.ShowDialog();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DoiMatKhau f = new DoiMatKhau();
+            f.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            //this.Close();
+            ManHinhAdmin f = new ManHinhAdmin();
             f.ShowDialog();
         }
     }

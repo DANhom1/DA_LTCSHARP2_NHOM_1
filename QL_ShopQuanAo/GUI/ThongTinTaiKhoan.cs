@@ -41,6 +41,14 @@ namespace GUI
 
         }
 
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            string ns=dtpNS.Value.ToString();
+            bbTK.SuaTaiKhoan(label6.Text, txtHoTen.Text, txtDiaChi.Text, ns, txtGT.Text);
+            MessageBox.Show("Sửa Thông Tin Thành Công");
+            ThongTinTaiKhoan_Load(sender, e);
+        }
+
 
     }
 }

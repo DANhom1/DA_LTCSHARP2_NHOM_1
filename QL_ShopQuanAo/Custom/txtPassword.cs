@@ -26,7 +26,7 @@ namespace Custom
             if (IsStrongPass(this.Text) == false)
             {
                 err.SetError(this, "Mật khẩu này chưa đủ mạnh, phải có:\r\n1. Tối thiểu 1 ký tự hoa.\r\n2. Tối thiểu 1 ký tự thường.\r\n3. Tối thiểu 1 ký tự đặc biệt.\r\n4. Tối thiểu 1 số.\r\n5. Tối thiểu 8 ký tự.\r\n6. Tối đa 30 ký tự.");
-                this.Focus();
+                //this.Focus();
             }
             else
             {

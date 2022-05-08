@@ -76,14 +76,15 @@
             // 
             this.đăngXuấtToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem.Image")));
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thoátToolStripMenuItem.Image")));
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
             // 
             // quảnLýToolStripMenuItem
@@ -169,7 +170,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManHinhNV";
             this.Text = "ManHinhNV";
             this.Load += new System.EventHandler(this.ManHinhNV_Load);

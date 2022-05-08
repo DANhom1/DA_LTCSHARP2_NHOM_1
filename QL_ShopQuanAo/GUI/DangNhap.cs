@@ -39,7 +39,7 @@ namespace GUI
             this.Close();
         }
         public TAIKHOAN taikhoan;
-        //public TAIKHOAN taikhoanNV;
+        public TAIKHOAN taikhoanNV;
         public THONGTINTAIKHOAN tttk;
         private void butonQuanAo1_Click(object sender, EventArgs e)
         {   
@@ -49,27 +49,14 @@ namespace GUI
                 txtUsername.Select();
                 return;
             }
-            TAIKHOAN tk = ql.TAIKHOANs.SingleOrDefault(t => t.TENTK == txtUsername.Text && t.MATKHAU == txtPassword.Text);
-            //TAIKHOAN ktq = ql.TAIKHOANs.SingleOrDefault(t => t.MATK == tk.MATK && t.MAQUYEN==taikhoan.MAQUYEN);
+            //TAIKHOAN tk = ql.TAIKHOANs.SingleOrDefault(t => t.TENTK == txtUsername.Text && t.MATKHAU == txtPassword.Text);
+            //if(tk!=null)
+            TAIKHOAN tk = bllTaiKhoan.DangNhap(txtUsername.Text, txtPassword.Text);
             if(tk!=null)
             {
-                //if (ktq != null)
-                //{
-                    //MessageBox.Show("Đăng nhập thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     taikhoan = tk;
                     tttk = ql.THONGTINTAIKHOANs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
-                    //ThongTinTaiKhoan.matk = tttk.MATK;
                     this.Dispose();
-                    //ManHinhAdmin f = new ManHinhAdmin();
-                    //f.ShowDialog();
-                    //this.Dispose();
-                //}
-                //else
-                //{
-                //    taikhoan = tk;
-                //    tttk = ql.THONGTINTAIKHOANs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
-                //    this.Dispose();
-                //}
             }
             else
             {
