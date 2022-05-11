@@ -85,6 +85,10 @@ namespace GUI
                     //}
                 }
             }
+            else
+            {
+                MessageBox.Show("Đổi Mật Khẩu Thất Bại");
+            }
         }
 
         private void DoiMatKhau_Load(object sender, EventArgs e)

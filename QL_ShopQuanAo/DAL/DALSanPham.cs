@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DTO;
 
 namespace DAL
@@ -54,6 +55,33 @@ namespace DAL
             sua.NSX = nsx;
             sua.MALSP = malsp;
             qlqa.SubmitChanges();
+        }
+        public List<View_SanPham> TimKiem(string timkiem)
+        {
+            List<View_SanPham> kq=new List<View_SanPham>();
+            List<View_SanPham> kq_masp = qlqa.View_SanPhams.Where(t => t.MASP.ToString() == timkiem).ToList();
+            if (kq_masp.Count()==0)
+            {
+                kq = qlqa.View_SanPhams.Where(t => t.TENSP.Contains(timkiem) == true).ToList();
+            }
+            else
+            {
+                kq = qlqa.View_SanPhams.Where(t => t.MASP == int.Parse(timkiem) || t.TENSP.Contains(timkiem) == true).ToList();
+            }
+            return kq;
+        }
+
+        //public List<View_SanPham> TimKiemTheoTenSP(string tenSP)
+        //{
+        //    return qlqa.View_SanPhams.Where(t => t.TENSP.Contains(tenSP)==true).ToList();
+        //}
+        public int ktMaSP(int maSP)
+        {
+            return qlqa.SANPHAMs.Where(t => t.MASP == maSP).Count();
+        }
+        public int ktTenSP(string tenSP)
+        {
+            return qlqa.SANPHAMs.Where(t => t.TENSP.Contains(tenSP) == true).Count();
         }
     }
 }

@@ -68,5 +68,16 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(txtTimKiem.TextLength==0)
+            {
+                MessageBox.Show("Vui lòng nhập thông tin cần tìm!");
+                txtTimKiem.Focus();
+            }
+            dataGridView1.DataSource = bllSP.TimKiem(txtTimKiem.Text);
+            
+        }
     }
 }

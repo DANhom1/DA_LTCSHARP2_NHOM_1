@@ -48,6 +48,9 @@
             this.btnThem = new Custom.ButonQuanAo();
             this.label3 = new System.Windows.Forms.Label();
             this.dtpNT = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.MaskedTextBox();
+            this.btnTimKiem = new Custom.ButonQuanAo();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +59,7 @@
             // 
             this.cb_manv.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_manv.FormattingEnabled = true;
-            this.cb_manv.Location = new System.Drawing.Point(291, 249);
+            this.cb_manv.Location = new System.Drawing.Point(290, 297);
             this.cb_manv.Margin = new System.Windows.Forms.Padding(4);
             this.cb_manv.Name = "cb_manv";
             this.cb_manv.Size = new System.Drawing.Size(313, 35);
@@ -66,7 +69,7 @@
             // 
             this.cbo_MaKH.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_MaKH.FormattingEnabled = true;
-            this.cbo_MaKH.Location = new System.Drawing.Point(291, 327);
+            this.cbo_MaKH.Location = new System.Drawing.Point(290, 375);
             this.cbo_MaKH.Margin = new System.Windows.Forms.Padding(4);
             this.cbo_MaKH.Name = "cbo_MaKH";
             this.cbo_MaKH.Size = new System.Drawing.Size(313, 35);
@@ -79,7 +82,7 @@
             this.CBo_TT.Items.AddRange(new object[] {
             "Đã thanh toán",
             "Chưa thanh toán"});
-            this.CBo_TT.Location = new System.Drawing.Point(1104, 217);
+            this.CBo_TT.Location = new System.Drawing.Point(1103, 265);
             this.CBo_TT.Margin = new System.Windows.Forms.Padding(4);
             this.CBo_TT.Name = "CBo_TT";
             this.CBo_TT.Size = new System.Drawing.Size(313, 35);
@@ -90,7 +93,7 @@
             this.txtmaHD.Enabled = false;
             this.txtmaHD.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmaHD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtmaHD.Location = new System.Drawing.Point(291, 164);
+            this.txtmaHD.Location = new System.Drawing.Point(290, 212);
             this.txtmaHD.Margin = new System.Windows.Forms.Padding(5);
             this.txtmaHD.Name = "txtmaHD";
             this.txtmaHD.Size = new System.Drawing.Size(313, 32);
@@ -102,7 +105,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(93, 172);
+            this.label2.Location = new System.Drawing.Point(92, 220);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 25);
@@ -115,7 +118,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(939, 227);
+            this.label8.Location = new System.Drawing.Point(938, 275);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 25);
@@ -138,7 +141,7 @@
             // 
             this.txt_THHTOAN.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_THHTOAN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_THHTOAN.Location = new System.Drawing.Point(1104, 290);
+            this.txt_THHTOAN.Location = new System.Drawing.Point(1103, 338);
             this.txt_THHTOAN.Margin = new System.Windows.Forms.Padding(5);
             this.txt_THHTOAN.Name = "txt_THHTOAN";
             this.txt_THHTOAN.Size = new System.Drawing.Size(313, 32);
@@ -150,7 +153,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label6.Location = new System.Drawing.Point(950, 297);
+            this.label6.Location = new System.Drawing.Point(949, 345);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 25);
@@ -163,7 +166,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label1.Location = new System.Drawing.Point(81, 249);
+            this.label1.Location = new System.Drawing.Point(80, 297);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 25);
@@ -176,7 +179,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(57, 326);
+            this.label4.Location = new System.Drawing.Point(56, 374);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 25);
@@ -222,7 +225,7 @@
             this.btnDong.ForeColor = System.Drawing.Color.White;
             this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDong.Location = new System.Drawing.Point(1104, 390);
+            this.btnDong.Location = new System.Drawing.Point(1103, 438);
             this.btnDong.Margin = new System.Windows.Forms.Padding(4);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(141, 54);
@@ -245,7 +248,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(497, 390);
+            this.btnXoa.Location = new System.Drawing.Point(496, 438);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(141, 54);
@@ -268,7 +271,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(808, 390);
+            this.btnSua.Location = new System.Drawing.Point(807, 438);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(141, 54);
@@ -291,7 +294,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(244, 390);
+            this.btnThem.Location = new System.Drawing.Point(243, 438);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(141, 54);
@@ -307,7 +310,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label3.Location = new System.Drawing.Point(939, 164);
+            this.label3.Location = new System.Drawing.Point(938, 212);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
@@ -316,16 +319,65 @@
             // 
             // dtpNT
             // 
-            this.dtpNT.Location = new System.Drawing.Point(1104, 164);
+            this.dtpNT.Location = new System.Drawing.Point(1103, 212);
             this.dtpNT.Name = "dtpNT";
             this.dtpNT.Size = new System.Drawing.Size(312, 22);
             this.dtpNT.TabIndex = 168;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label5.Location = new System.Drawing.Point(103, 131);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 25);
+            this.label5.TabIndex = 169;
+            this.label5.Text = "Tìm Kiếm";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtTimKiem.Location = new System.Drawing.Point(290, 124);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(924, 39);
+            this.txtTimKiem.TabIndex = 170;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTimKiem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTimKiem.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTimKiem.BorderRadius = 20;
+            this.btnTimKiem.BorderSize = 0;
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(1253, 118);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(148, 54);
+            this.btnTimKiem.TabIndex = 171;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextColor = System.Drawing.Color.White;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dtpNT);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDong);
@@ -376,5 +428,8 @@
         private Custom.ButonQuanAo btnThem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dtpNT;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.MaskedTextBox txtTimKiem;
+        private Custom.ButonQuanAo btnTimKiem;
     }
 }

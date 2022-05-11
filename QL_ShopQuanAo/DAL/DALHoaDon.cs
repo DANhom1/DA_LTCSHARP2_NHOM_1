@@ -61,5 +61,19 @@ namespace DAL
         {
             return qlqa.HOADONs.Where(t => t.MAHD == maHD).Count();
         }
+        public List<View_HoaDon> TimKiem(string timkiem)
+        {
+            List<View_HoaDon> kq = new List<View_HoaDon>();
+            List<View_HoaDon> kq_mahd = qlqa.View_HoaDons.Where(t => t.MAHD.ToString() == timkiem).ToList();
+            if (kq_mahd.Count() == 0)
+            {
+                kq = qlqa.View_HoaDons.Where(t => t.MANV.Contains(timkiem) == true).ToList();
+            }
+            else
+            {
+                kq = qlqa.View_HoaDons.Where(t => t.MAHD == int.Parse(timkiem) || t.MANV.Contains(timkiem) == true).ToList();
+            }
+            return kq;
+        }
     }
 }
