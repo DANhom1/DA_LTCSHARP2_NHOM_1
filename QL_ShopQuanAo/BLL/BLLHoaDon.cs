@@ -34,5 +34,9 @@ namespace BLL
         {
             return dalhoadon.ktMaHD(maHD);
         }
+        public List<View_HoaDon> TimKiem(string tk)
+        {
+            return dalhoadon.TimKiem(tk);
+        }
     }
 }

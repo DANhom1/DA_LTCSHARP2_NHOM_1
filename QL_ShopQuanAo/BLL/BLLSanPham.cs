@@ -27,5 +27,22 @@ namespace BLL
         {
             dalsp.SuaSanPham(maSP, tensp, soluong, dongia, nsx, malsp);
         }
+        public int ktTenSP(string tenSP)
+        {
+            return dalsp.ktTenSP(tenSP);
+        }
+        public List<View_SanPham> TimKiem(string timkiem)
+        {
+            return dalsp.TimKiem(timkiem);
+        }
+
+        //public List<View_SanPham> TimKiemTheoTenSP(string tenSP)
+        //{
+        //    return dalsp.TimKiemTheoTenSP(tenSP);
+        //}
+        public int ktMaSP(int maSP)
+        {
+            return dalsp.ktMaSP(maSP);
+        }
     }
 }
