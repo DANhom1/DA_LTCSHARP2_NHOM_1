@@ -8,8 +8,7 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.pdb
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.dll.config
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\DTO.pdb
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.xml
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.SqlServer.xml

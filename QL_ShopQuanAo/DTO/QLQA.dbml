@@ -125,4 +125,11 @@
       <Column Name="MALSP" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.THONGKE" Member="THONGKEs">
+    <Type Name="THONGKE">
+      <Column Name="Nam" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Thang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Doanhthu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
 </Database>

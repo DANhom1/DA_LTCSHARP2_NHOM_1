@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QL_ShopQuanAoModelStoreContainer" CdmEntityContainer="QL_ShopQuanAoEntities">
+    <EntitySetMapping Name="THONGKEs">
+      <EntityTypeMapping TypeName="QL_ShopQuanAoModel.THONGKE">
+        <MappingFragment StoreEntitySet="THONGKE">
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="Thang" ColumnName="Thang" />
+          <ScalarProperty Name="Doanhthu" ColumnName="Doanhthu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

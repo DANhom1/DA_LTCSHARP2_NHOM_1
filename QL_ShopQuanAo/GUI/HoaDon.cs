@@ -44,33 +44,33 @@ namespace GUI
             cbo_MaKH.ValueMember = "MaKH";
             cbo_MaKH.DisplayMember = "MaKH";
 
-            var CBO_TT = from hd in qlqa.HOADONs
-                         select new
-                         {
-                             hd.TINHTRANG
-                         };
+            var CBO_TT = (from hd in qlqa.HOADONs select hd.TINHTRANG).Distinct();
+                         //select new
+                         //{
+                         //    hd.TINHTRANG
+                         //};
             CBo_TT.DataSource = CBO_TT;
-            CBo_TT.ValueMember = "TINHTRANG";
-            CBo_TT.DisplayMember = "TINHTRANG";
+            //CBo_TT.ValueMember = "TINHTRANG";
+            //CBo_TT.DisplayMember = "TINHTRANG";
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             string dtp = dtpNT.Value.ToString();
-            //if(txtmaHD.Text.Trim()=="")
-            //{
-            //    MessageBox.Show("Không được bỏ trống Mã Hoá Đơn");
-            //}
+            if (txtmaHD.Text.Trim() == "")
+            {
+                MessageBox.Show("Không được bỏ trống Mã Hoá Đơn");
+            }
             //else if (bllhoadon.ktMaHD(int.Parse(txtmaHD.Text)) > 0)
             //{
             //    MessageBox.Show("Đã có Mã Hoá Đơn này");
             //}
-            //else
-            //{
+            else
+            {
                 bllhoadon.ThemHoaDon(dtp, float.Parse(txt_THHTOAN.Text), CBo_TT.SelectedValue.ToString(), cbo_MaKH.SelectedValue.ToString(), cb_manv.SelectedValue.ToString());
                 MessageBox.Show("Thêm Hoá Đơn Thành Công");
                 HoaDon_Load(sender, e);
-            //}
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

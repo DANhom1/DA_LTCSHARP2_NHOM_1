@@ -16,12 +16,3 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\DTO.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\BLL.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\BLL.pdb
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\DAL.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\DTO.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\DAL.pdb
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\bin\Debug\DTO.pdb
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.dll
-C:\Users\Na\Documents\GitHub\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BLL\obj\Debug\BLL.pdb

@@ -63,6 +63,9 @@ namespace DTO
     partial void InsertTAIKHOAN(TAIKHOAN instance);
     partial void UpdateTAIKHOAN(TAIKHOAN instance);
     partial void DeleteTAIKHOAN(TAIKHOAN instance);
+    partial void InsertTHONGKE(THONGKE instance);
+    partial void UpdateTHONGKE(THONGKE instance);
+    partial void DeleteTHONGKE(THONGKE instance);
     #endregion
 		
 		public QLQADataContext() : 
@@ -196,6 +199,14 @@ namespace DTO
 			get
 			{
 				return this.GetTable<View_SanPham>();
+			}
+		}
+		
+		public System.Data.Linq.Table<THONGKE> THONGKEs
+		{
+			get
+			{
+				return this.GetTable<THONGKE>();
 			}
 		}
 	}
@@ -2526,6 +2537,116 @@ namespace DTO
 				{
 					this._MALSP = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.THONGKE")]
+	public partial class THONGKE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Nam;
+		
+		private int _Thang;
+		
+		private int _Doanhthu;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnNamChanging(int value);
+    partial void OnNamChanged();
+    partial void OnThangChanging(int value);
+    partial void OnThangChanged();
+    partial void OnDoanhthuChanging(int value);
+    partial void OnDoanhthuChanged();
+    #endregion
+		
+		public THONGKE()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nam", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Nam
+		{
+			get
+			{
+				return this._Nam;
+			}
+			set
+			{
+				if ((this._Nam != value))
+				{
+					this.OnNamChanging(value);
+					this.SendPropertyChanging();
+					this._Nam = value;
+					this.SendPropertyChanged("Nam");
+					this.OnNamChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thang", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Thang
+		{
+			get
+			{
+				return this._Thang;
+			}
+			set
+			{
+				if ((this._Thang != value))
+				{
+					this.OnThangChanging(value);
+					this.SendPropertyChanging();
+					this._Thang = value;
+					this.SendPropertyChanged("Thang");
+					this.OnThangChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Doanhthu", DbType="Int NOT NULL")]
+		public int Doanhthu
+		{
+			get
+			{
+				return this._Doanhthu;
+			}
+			set
+			{
+				if ((this._Doanhthu != value))
+				{
+					this.OnDoanhthuChanging(value);
+					this.SendPropertyChanging();
+					this._Doanhthu = value;
+					this.SendPropertyChanged("Doanhthu");
+					this.OnDoanhthuChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

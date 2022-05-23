@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QL_ShopQuanAoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="THONGKE">
+    <Key>
+      <PropertyRef Name="Nam" />
+      <PropertyRef Name="Thang" />
+    </Key>
+    <Property Name="Nam" Type="Int32" Nullable="false" />
+    <Property Name="Thang" Type="Int32" Nullable="false" />
+    <Property Name="Doanhthu" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QL_ShopQuanAoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="THONGKEs" EntityType="Self.THONGKE" />
+  </EntityContainer>
+</Schema>
