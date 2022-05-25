@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO_BUS_DATA
+namespace BLL
 {
     public class Class1
     {

@@ -28,26 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< Updated upstream
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
-            this.txt_giamgia = new System.Windows.Forms.TextBox();
-            this.txtThanhToan = new System.Windows.Forms.TextBox();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BanHang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BanHang));
             this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.txt_giamgia = new System.Windows.Forms.TextBox();
             this.txtThanhToan = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTao = new Custom.ButonQuanAo();
             this.label3 = new System.Windows.Forms.Label();
             this.lblDTL = new System.Windows.Forms.Label();
             this.cb_makh = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnXoa = new Custom.ButonQuanAo();
+            this.btnSua = new Custom.ButonQuanAo();
             this.label1 = new System.Windows.Forms.Label();
             this.dtv_hd = new System.Windows.Forms.DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +56,7 @@
             this.Dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cb_mahang = new System.Windows.Forms.ComboBox();
+            this.btnThem = new Custom.ButonQuanAo();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_soluong = new System.Windows.Forms.TextBox();
@@ -69,29 +66,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTT = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnTaoKH = new Custom.ButonQuanAo();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_sdt = new System.Windows.Forms.TextBox();
-            this.btnTaoKH = new Custom.ButonQuanAo();
             this.btnTT = new Custom.ButonQuanAo();
-            this.btnXoa = new Custom.ButonQuanAo();
-            this.btnSua = new Custom.ButonQuanAo();
-            this.btnThem = new Custom.ButonQuanAo();
-            this.btnTao = new Custom.ButonQuanAo();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_hd)).BeginInit();
             this.groupBox3.SuspendLayout();
-=======
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
-            this.txt_giamgia = new System.Windows.Forms.TextBox();
-            this.txtThanhToan = new System.Windows.Forms.TextBox();
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
-            this.txt_giamgia = new System.Windows.Forms.TextBox();
-            this.txtThanhToan = new System.Windows.Forms.TextBox();
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // txt_tongtien
@@ -130,10 +112,6 @@
             this.txtThanhToan.TabIndex = 84;
             this.txtThanhToan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnTao);
@@ -150,6 +128,27 @@
             this.groupBox1.TabIndex = 85;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
+            // 
+            // btnTao
+            // 
+            this.btnTao.BackColor = System.Drawing.Color.Red;
+            this.btnTao.BackgroundColor = System.Drawing.Color.Red;
+            this.btnTao.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTao.BorderRadius = 20;
+            this.btnTao.BorderSize = 0;
+            this.btnTao.FlatAppearance.BorderSize = 0;
+            this.btnTao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTao.ForeColor = System.Drawing.Color.White;
+            this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
+            this.btnTao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTao.Location = new System.Drawing.Point(469, 61);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(211, 55);
+            this.btnTao.TabIndex = 94;
+            this.btnTao.Text = "Tạo Hoá Đơn";
+            this.btnTao.TextColor = System.Drawing.Color.White;
+            this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // label3
             // 
@@ -229,6 +228,52 @@
             this.groupBox2.TabIndex = 87;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin các mặt hàng";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnXoa.BorderRadius = 20;
+            this.btnXoa.BorderSize = 0;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(1085, 43);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(141, 54);
+            this.btnXoa.TabIndex = 168;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSua.BorderRadius = 20;
+            this.btnSua.BorderSize = 0;
+            this.btnSua.FlatAppearance.BorderSize = 0;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(1256, 43);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(141, 54);
+            this.btnSua.TabIndex = 167;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label1
             // 
@@ -357,6 +402,29 @@
             this.cb_mahang.TabIndex = 97;
             this.cb_mahang.SelectedIndexChanged += new System.EventHandler(this.cb_mahang_SelectedIndexChanged);
             // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnThem.BorderRadius = 20;
+            this.btnThem.BorderSize = 0;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(906, 43);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(141, 54);
+            this.btnThem.TabIndex = 166;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -467,6 +535,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Khách mới";
             // 
+            // btnTaoKH
+            // 
+            this.btnTaoKH.BackColor = System.Drawing.Color.Red;
+            this.btnTaoKH.BackgroundColor = System.Drawing.Color.Red;
+            this.btnTaoKH.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTaoKH.BorderRadius = 20;
+            this.btnTaoKH.BorderSize = 0;
+            this.btnTaoKH.FlatAppearance.BorderSize = 0;
+            this.btnTaoKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoKH.ForeColor = System.Drawing.Color.White;
+            this.btnTaoKH.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoKH.Image")));
+            this.btnTaoKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoKH.Location = new System.Drawing.Point(160, 96);
+            this.btnTaoKH.Name = "btnTaoKH";
+            this.btnTaoKH.Size = new System.Drawing.Size(251, 55);
+            this.btnTaoKH.TabIndex = 95;
+            this.btnTaoKH.Text = "Tạo Khách hàng";
+            this.btnTaoKH.TextColor = System.Drawing.Color.White;
+            this.btnTaoKH.UseVisualStyleBackColor = false;
+            this.btnTaoKH.Click += new System.EventHandler(this.btnTaoKH_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -489,27 +578,6 @@
             this.txt_sdt.Size = new System.Drawing.Size(236, 35);
             this.txt_sdt.TabIndex = 123;
             // 
-            // btnTaoKH
-            // 
-            this.btnTaoKH.BackColor = System.Drawing.Color.Red;
-            this.btnTaoKH.BackgroundColor = System.Drawing.Color.Red;
-            this.btnTaoKH.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnTaoKH.BorderRadius = 20;
-            this.btnTaoKH.BorderSize = 0;
-            this.btnTaoKH.FlatAppearance.BorderSize = 0;
-            this.btnTaoKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoKH.ForeColor = System.Drawing.Color.White;
-            this.btnTaoKH.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoKH.Image")));
-            this.btnTaoKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoKH.Location = new System.Drawing.Point(160, 96);
-            this.btnTaoKH.Name = "btnTaoKH";
-            this.btnTaoKH.Size = new System.Drawing.Size(251, 55);
-            this.btnTaoKH.TabIndex = 95;
-            this.btnTaoKH.Text = "Tạo Khách hàng";
-            this.btnTaoKH.TextColor = System.Drawing.Color.White;
-            this.btnTaoKH.UseVisualStyleBackColor = false;
-            this.btnTaoKH.Click += new System.EventHandler(this.btnTaoKH_Click);
-            // 
             // btnTT
             // 
             this.btnTT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -531,111 +599,11 @@
             this.btnTT.UseVisualStyleBackColor = false;
             this.btnTT.Click += new System.EventHandler(this.btnTT_Click);
             // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoa.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnXoa.BorderRadius = 20;
-            this.btnXoa.BorderSize = 0;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(1085, 43);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(141, 54);
-            this.btnXoa.TabIndex = 168;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextColor = System.Drawing.Color.White;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSua.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSua.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSua.BorderRadius = 20;
-            this.btnSua.BorderSize = 0;
-            this.btnSua.FlatAppearance.BorderSize = 0;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(1256, 43);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(141, 54);
-            this.btnSua.TabIndex = 167;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextColor = System.Drawing.Color.White;
-            this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThem.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThem.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnThem.BorderRadius = 20;
-            this.btnThem.BorderSize = 0;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(906, 43);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(141, 54);
-            this.btnThem.TabIndex = 166;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextColor = System.Drawing.Color.White;
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnTao
-            // 
-            this.btnTao.BackColor = System.Drawing.Color.Red;
-            this.btnTao.BackgroundColor = System.Drawing.Color.Red;
-            this.btnTao.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnTao.BorderRadius = 20;
-            this.btnTao.BorderSize = 0;
-            this.btnTao.FlatAppearance.BorderSize = 0;
-            this.btnTao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTao.ForeColor = System.Drawing.Color.White;
-            this.btnTao.Image = ((System.Drawing.Image)(resources.GetObject("btnTao.Image")));
-            this.btnTao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTao.Location = new System.Drawing.Point(469, 61);
-            this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(211, 55);
-            this.btnTao.TabIndex = 94;
-            this.btnTao.Text = "Tạo Hoá Đơn";
-            this.btnTao.TextColor = System.Drawing.Color.White;
-            this.btnTao.UseVisualStyleBackColor = false;
-            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
-            // 
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
             // BanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(489, 327);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1481, 840);
+            this.ClientSize = new System.Drawing.Size(1147, 659);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnTT);
             this.Controls.Add(this.txtTT);
@@ -646,13 +614,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox1);
-=======
-            this.ClientSize = new System.Drawing.Size(489, 327);
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
-            this.ClientSize = new System.Drawing.Size(489, 327);
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
             this.Controls.Add(this.txtThanhToan);
             this.Controls.Add(this.txt_giamgia);
             this.Controls.Add(this.txt_tongtien);
@@ -660,10 +621,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BanHang";
             this.Text = "BanHang";
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             this.Load += new System.EventHandler(this.BanHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -672,11 +629,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtv_hd)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -687,10 +639,6 @@
         private System.Windows.Forms.TextBox txt_tongtien;
         private System.Windows.Forms.TextBox txt_giamgia;
         private System.Windows.Forms.TextBox txtThanhToan;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDTL;
@@ -727,10 +675,5 @@
         private Custom.ButonQuanAo btnTaoKH;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txt_sdt;
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
     }
 }

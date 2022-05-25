@@ -138,22 +138,5 @@ namespace GUI
             f.ShowDialog();
         }
 
-        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ThongKe f = new ThongKe();
-            f.ShowDialog();
-        }
-
-        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ThongKe f = new ThongKe();
-            f.ShowDialog();
-        }
-
-        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ThongKe f = new ThongKe();
-            f.ShowDialog();
-        }
     }
 }

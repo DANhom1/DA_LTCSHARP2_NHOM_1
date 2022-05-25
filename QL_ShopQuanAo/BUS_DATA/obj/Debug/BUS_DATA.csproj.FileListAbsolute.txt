@@ -1,5 +1,4 @@
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BUS_DATA\bin\Debug\BUS_DATA.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BUS_DATA\bin\Debug\BUS_DATA.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BUS_DATA\obj\Debug\BUS_DATA.csprojResolveAssemblyReference.cache
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BUS_DATA\obj\Debug\BUS_DATA.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\BUS_DATA\obj\Debug\BUS_DATA.pdb

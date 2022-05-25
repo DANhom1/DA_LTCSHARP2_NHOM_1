@@ -7,26 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 using System.Text.RegularExpressions;
 using BUS;
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
 
 namespace GUI
 {
     public partial class BanHang : Form
     {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         BUSKhachHang kh = new BUSKhachHang();
         BUSHoaDon hd = new BUSHoaDon();
         BUSSanPham sp = new BUSSanPham();
@@ -85,20 +72,10 @@ namespace GUI
             string sMailPattern = @"^((09(\d){8})|(03(\d){8})|(08(\d){8})|(07(\d){8})|(05(\d){8}))$";
             return Regex.IsMatch(phoneNum.Trim(), sMailPattern);
         }
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
         public BanHang()
         {
             InitializeComponent();
         }
-
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         private void BanHang_Load(object sender, EventArgs e)
         {
             cb_makh.DisplayMember = "MAKH";
@@ -359,10 +336,5 @@ namespace GUI
             cb_mahang.Text = dtv_hd.CurrentRow.Cells[4].Value.ToString();
             txt_soluong.Text = dtv_hd.CurrentRow.Cells[6].Value.ToString();
         }
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
     }
 }

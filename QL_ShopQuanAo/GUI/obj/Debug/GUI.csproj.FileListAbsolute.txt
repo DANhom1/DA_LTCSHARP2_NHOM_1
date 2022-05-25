@@ -1,29 +1,16 @@
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe.config
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\GUI.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\Custom.dll
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\Custom.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.DanhMuc.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.exe
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\DTO.dll
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\DAL.dll
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\BLL.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\DTO.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\DAL.pdb
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\bin\Debug\BLL.dll
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.DangNhap.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.TienKhach.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.TienThua.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.ManHinhAdmin.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.ManHinhNV.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.DoiMatKhau.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.GioiThieu.resources
-C:\Users\Na\Desktop\HKII Năm 3\Phát Triển Phần Mềm Và Ứng Dụng\QL_ShopQuanAo\GUI\obj\Debug\GUI.HoaDon.resources
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.exe
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe.config
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BLL.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BUS_DATA.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\Custom.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DAL.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DTO.dll
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BLL.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BUS_DATA.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\Custom.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DAL.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DTO.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.BanHang.resources
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.DangNhap.resources
@@ -40,33 +27,5 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.ThongTinTa
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.TienKhach.resources
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.TienThua.resources
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe.config
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\GUI.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BLL.dll
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BUS_DATA.dll
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\Custom.dll
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DTO.dll
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DAL.dll
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BUS_DATA.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\Custom.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BLL.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DTO.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DAL.pdb
-<<<<<<< HEAD
-=======
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.exe
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.ThongKe.resources
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.BanHang.resources
-C:\Users\Na\Documents\GitHub\QL_ShopQuanAo\GUI\bin\Debug\GUI.exe.config
-C:\Users\Na\Documents\GitHub\QL_ShopQuanAo\GUI\obj\Debug\GUI.exe
-C:\Users\Na\Documents\GitHub\QL_ShopQuanAo\GUI\obj\Debug\GUI.pdb
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes

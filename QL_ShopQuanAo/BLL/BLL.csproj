@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F6A0B72-5432-4A4C-BD5D-4A83C9A8BF64}</ProjectGuid>
+    <ProjectGuid>{A1C469D2-C150-4D85-9BDE-04376BA4C43A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL</RootNamespace>
@@ -50,16 +50,7 @@
     <Compile Include="BLLSanPham.cs" />
     <Compile Include="BLLTaiKhoan.cs" />
     <Compile Include="BLLThongKe.cs" />
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
->>>>>>> Stashed changes
     <Compile Include="Class1.cs" />
->>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
