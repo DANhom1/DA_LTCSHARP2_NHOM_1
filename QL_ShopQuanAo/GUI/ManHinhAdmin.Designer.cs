@@ -177,8 +177,24 @@
             // 
             this.bánHàngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bánHàngToolStripMenuItem.Image")));
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
+<<<<<<< Updated upstream
             this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.bánHàngToolStripMenuItem.Text = "Bán hàng";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.bánHàngToolStripMenuItem.Text = "Bán hàng";
+            this.bánHàngToolStripMenuItem.Click += new System.EventHandler(this.bánHàngToolStripMenuItem_Click);
+=======
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.bánHàngToolStripMenuItem.Text = "Bán hàng";
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
+=======
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.bánHàngToolStripMenuItem.Text = "Bán hàng";
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
+>>>>>>> Stashed changes
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 

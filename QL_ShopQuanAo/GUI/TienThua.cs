@@ -16,5 +16,20 @@ namespace GUI
         {
             InitializeComponent();
         }
+        float giaTien = float.Parse(BanHang.Bh_thanhtoan);
+        string giamgia = BanHang.Bh_giamgia;
+        string tongtien = BanHang.Bh_tongtien;
+        float tienkhach = TienKhach.Val;
+
+        private void TienThua_Load(object sender, EventArgs e)
+        {
+            float a = tienkhach - giaTien;
+            lblTienThua.Text = string.Format("{0:#,##0} VNĐ", a);
+        }
+
+        private void btnDongY_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

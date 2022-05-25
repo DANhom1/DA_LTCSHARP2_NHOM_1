@@ -194,6 +194,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BUS_DATA\BUS_DATA.csproj">
+      <Project>{516d4d5f-fcfa-403c-8586-6eb57fa81765}</Project>
+      <Name>BUS_DATA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Custom\Custom.csproj">
       <Project>{92FCD6CD-2A28-4272-B0A1-B72BAFCA9A2D}</Project>
       <Name>Custom</Name>

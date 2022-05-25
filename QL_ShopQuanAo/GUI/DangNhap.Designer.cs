@@ -35,7 +35,6 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.butonQuanAo2 = new Custom.ButonQuanAo();
             this.butonQuanAo1 = new Custom.ButonQuanAo();
             this.SuspendLayout();
             // 
@@ -46,7 +45,7 @@
             this.checkBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.checkBox1.Image = ((System.Drawing.Image)(resources.GetObject("checkBox1.Image")));
             this.checkBox1.Location = new System.Drawing.Point(499, 220);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(48, 30);
             this.checkBox1.TabIndex = 19;
@@ -70,7 +69,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(277, 218);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(197, 35);
             this.txtPassword.TabIndex = 18;
@@ -80,7 +79,7 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(277, 164);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(197, 35);
             this.txtUsername.TabIndex = 16;
@@ -111,30 +110,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Tài khoản:";
             // 
-            // butonQuanAo2
-            // 
-            this.butonQuanAo2.BackColor = System.Drawing.Color.Green;
-            this.butonQuanAo2.BackgroundColor = System.Drawing.Color.Green;
-            this.butonQuanAo2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.butonQuanAo2.BorderRadius = 20;
-            this.butonQuanAo2.BorderSize = 0;
-            this.butonQuanAo2.FlatAppearance.BorderSize = 0;
-            this.butonQuanAo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butonQuanAo2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butonQuanAo2.ForeColor = System.Drawing.Color.White;
-            this.butonQuanAo2.Image = ((System.Drawing.Image)(resources.GetObject("butonQuanAo2.Image")));
-            this.butonQuanAo2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.butonQuanAo2.Location = new System.Drawing.Point(408, 277);
-            this.butonQuanAo2.Margin = new System.Windows.Forms.Padding(4);
-            this.butonQuanAo2.Name = "butonQuanAo2";
-            this.butonQuanAo2.Size = new System.Drawing.Size(104, 54);
-            this.butonQuanAo2.TabIndex = 127;
-            this.butonQuanAo2.Text = "Thoát";
-            this.butonQuanAo2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.butonQuanAo2.TextColor = System.Drawing.Color.White;
-            this.butonQuanAo2.UseVisualStyleBackColor = false;
-            this.butonQuanAo2.Click += new System.EventHandler(this.butonQuanAo2_Click);
-            // 
             // butonQuanAo1
             // 
             this.butonQuanAo1.BackColor = System.Drawing.Color.Fuchsia;
@@ -148,7 +123,7 @@
             this.butonQuanAo1.ForeColor = System.Drawing.Color.White;
             this.butonQuanAo1.Image = ((System.Drawing.Image)(resources.GetObject("butonQuanAo1.Image")));
             this.butonQuanAo1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.butonQuanAo1.Location = new System.Drawing.Point(208, 277);
+            this.butonQuanAo1.Location = new System.Drawing.Point(301, 276);
             this.butonQuanAo1.Margin = new System.Windows.Forms.Padding(4);
             this.butonQuanAo1.Name = "butonQuanAo1";
             this.butonQuanAo1.Size = new System.Drawing.Size(149, 54);
@@ -166,7 +141,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(671, 410);
-            this.Controls.Add(this.butonQuanAo2);
             this.Controls.Add(this.butonQuanAo1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
@@ -174,7 +148,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
             this.ResumeLayout(false);
@@ -191,6 +165,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Custom.ButonQuanAo butonQuanAo1;
-        private Custom.ButonQuanAo butonQuanAo2;
     }
 }

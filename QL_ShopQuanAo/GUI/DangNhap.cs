@@ -33,14 +33,10 @@ namespace GUI
                 txtPassword.UseSystemPasswordChar = true;
             }
         }
-
-        private void butonQuanAo2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         public TAIKHOAN taikhoan;
         public TAIKHOAN taikhoanNV;
         public THONGTINTAIKHOAN tttk;
+        public NHANVIEN nv;
         private void butonQuanAo1_Click(object sender, EventArgs e)
         {   
             if(string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
@@ -56,6 +52,7 @@ namespace GUI
             {
                     taikhoan = tk;
                     tttk = ql.THONGTINTAIKHOANs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
+                    nv = ql.NHANVIENs.SingleOrDefault(t => t.MATK == taikhoan.MATK);
                     this.Dispose();
             }
             else

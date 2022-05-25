@@ -16,7 +16,19 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< Updated upstream
             Application.Run(new BanHang());
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            Application.Run(new ManHinhAdmin());
+=======
+            Application.Run(new BanHang());
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
+=======
+            Application.Run(new BanHang());
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
+>>>>>>> Stashed changes
         }
     }
 }

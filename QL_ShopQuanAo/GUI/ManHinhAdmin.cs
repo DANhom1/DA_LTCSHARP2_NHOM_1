@@ -20,6 +20,7 @@ namespace GUI
         public static string matk;
         public static string tentk;
         public static string tenhienthi;
+        public static string manv;
         public ManHinhAdmin()
         {
             InitializeComponent();
@@ -63,6 +64,7 @@ namespace GUI
             var f = new DangNhap();
             f.ShowDialog();
             TAIKHOAN taikhoan = f.taikhoan;
+            NHANVIEN nv = f.nv;
             if(f.taikhoan.MAQUYEN==1)
             {
                 MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
@@ -78,8 +80,10 @@ namespace GUI
                 //matk = taikhoan.MATK;
                 //a.ShowDialog();
                 //this.Dispose();
+
                 MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
                 label1.Text = String.Format("NHÂN VIÊN: {0}", taikhoan.TENTK);
+                manv = nv.MANV;
                 tenhienthi = taikhoan.TENTK;
                 nhânViênToolStripMenuItem.Enabled = false;
                 danhMụcToolStripMenuItem.Enabled = false;
@@ -113,9 +117,36 @@ namespace GUI
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            //this.Close();
-            ManHinhAdmin f = new ManHinhAdmin();
+            if (MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                //this.Close();
+                ManHinhAdmin f = new ManHinhAdmin();
+                f.ShowDialog();
+            }
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKe f = new ThongKe();
+            f.ShowDialog();
+        }
+
+        private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BanHang f = new BanHang();
+            f.ShowDialog();
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKe f = new ThongKe();
+            f.ShowDialog();
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKe f = new ThongKe();
             f.ShowDialog();
         }
 

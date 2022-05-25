@@ -50,7 +50,16 @@
     <Compile Include="BLLSanPham.cs" />
     <Compile Include="BLLTaiKhoan.cs" />
     <Compile Include="BLLThongKe.cs" />
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
+>>>>>>> Stashed changes
     <Compile Include="Class1.cs" />
+>>>>>>> 8299cfd9f061456af4f19571db6f26fd2d84c8ca
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

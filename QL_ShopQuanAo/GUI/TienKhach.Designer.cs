@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TienKhach));
             this.btnXacNhan = new Custom.ButonQuanAo();
-            this.txtChiNhapSo1 = new Custom.txtChiNhapSo();
+            this.textBox1 = new Custom.txtChiNhapSo();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -47,9 +47,10 @@
             this.btnXacNhan.ForeColor = System.Drawing.Color.Black;
             this.btnXacNhan.Image = ((System.Drawing.Image)(resources.GetObject("btnXacNhan.Image")));
             this.btnXacNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXacNhan.Location = new System.Drawing.Point(43, 131);
+            this.btnXacNhan.Location = new System.Drawing.Point(57, 161);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(108, 45);
+            this.btnXacNhan.Size = new System.Drawing.Size(144, 55);
             this.btnXacNhan.TabIndex = 0;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -57,32 +58,37 @@
             this.btnXacNhan.UseVisualStyleBackColor = false;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
-            // txtChiNhapSo1
+            // textBox1
             // 
-            this.txtChiNhapSo1.Location = new System.Drawing.Point(29, 80);
-            this.txtChiNhapSo1.Name = "txtChiNhapSo1";
-            this.txtChiNhapSo1.Size = new System.Drawing.Size(132, 20);
-            this.txtChiNhapSo1.TabIndex = 2;
+            this.textBox1.Location = new System.Drawing.Point(39, 98);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(175, 22);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(25, 21);
+            this.label1.Location = new System.Drawing.Point(33, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.Size = new System.Drawing.Size(168, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tiền của khách";
             // 
             // TienKhach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(207, 205);
-            this.Controls.Add(this.txtChiNhapSo1);
+            this.ClientSize = new System.Drawing.Size(276, 252);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnXacNhan);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TienKhach";
             this.Text = "TienKhach";
             this.ResumeLayout(false);
@@ -93,7 +99,7 @@
         #endregion
 
         private Custom.ButonQuanAo btnXacNhan;
-        private Custom.txtChiNhapSo txtChiNhapSo1;
+        private Custom.txtChiNhapSo textBox1;
         private System.Windows.Forms.Label label1;
     }
 }
