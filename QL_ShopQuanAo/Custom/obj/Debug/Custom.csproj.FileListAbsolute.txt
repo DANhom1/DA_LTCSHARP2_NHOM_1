@@ -7,3 +7,4 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\bin\Debug\Custom.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\bin\Debug\Custom.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\Custom\obj\Debug\Custom.csprojResolveAssemblyReference.cache

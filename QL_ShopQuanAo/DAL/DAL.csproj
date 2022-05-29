@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DALDanhMuc.cs" />
     <Compile Include="DALHoaDon.cs" />
+    <Compile Include="DALKhachHang.cs" />
     <Compile Include="DALSanPham.cs" />
     <Compile Include="DALTaiKhoan.cs" />
     <Compile Include="DALThongKe.cs" />

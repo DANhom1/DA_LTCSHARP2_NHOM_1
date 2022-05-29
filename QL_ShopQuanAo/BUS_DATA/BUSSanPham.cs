@@ -18,5 +18,12 @@ namespace BUS
             dt = da.getTable(sql);
             return dt;
         }
+        public DataTable Search(String condi)
+        {
+            DataTable dt = null;
+            String sql = "Select MASP, TENSP,DONGIA from SANPHAM where TENSP like N'%" + condi + "%'";
+            dt = da.getTable(sql);
+            return dt;
+        }
     }
 }

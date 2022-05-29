@@ -12,3 +12,4 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramewor
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.SqlServer.dll
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.xml
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

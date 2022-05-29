@@ -12,7 +12,7 @@ namespace DAL
         QLQADataContext qlqa = new QLQADataContext();
         public List<THONGKE> LoadThongKe(int nam)
         {
-            return qlqa.THONGKEs.Where(t => t.Nam==nam).ToList();
+            return qlqa.THONGKEs.Where(t => t.NAM==nam).ToList();
         }
     }
 }

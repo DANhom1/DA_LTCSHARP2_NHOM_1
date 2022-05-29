@@ -25,7 +25,7 @@ namespace GUI
         {
             cbbNam.SelectedIndexChanged -= cbbNam_SelectedIndexChanged;
 
-            var CBO_Nam = (from n in qlqa.THONGKEs select n.Nam).Distinct();
+            var CBO_Nam = (from n in qlqa.THONGKEs select n.NAM).Distinct();
             cbbNam.DataSource = CBO_Nam;
 
             int namtk = int.Parse(cbbNam.SelectedValue.ToString());

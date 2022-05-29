@@ -15,17 +15,21 @@ namespace BLL
         {
             return dalsp.LoadSanPham();
         }
-        public void ThemSanPham(string tensp, int soluong, float dongia, string nsx, string malsp)
+        //public List<SANPHAM> LoadSanPham()
+        //{
+        //    return dalsp.LoadSanPham();
+        //}
+        public void ThemSanPham(string tensp, int soluong, string size, float dongia, string hinhanh, string nsx, string malsp)
         {
-            dalsp.ThemSanPham(tensp, soluong, dongia, nsx, malsp);
+            dalsp.ThemSanPham(tensp, soluong,size, dongia, hinhanh, nsx, malsp);
         }
         public void XoaSP(int maSP)
         {
             dalsp.XoaSanPham(maSP);
         }
-        public void SuaSanPham(int maSP, string tensp, int soluong, float dongia, string nsx, string malsp)
+        public void SuaSanPham(int maSP, string tensp, int soluong, string size, float dongia, string hinhanh, string nsx, string malsp)
         {
-            dalsp.SuaSanPham(maSP, tensp, soluong, dongia, nsx, malsp);
+            dalsp.SuaSanPham(maSP, tensp, soluong,size, dongia,hinhanh, nsx, malsp);
         }
         public int ktTenSP(string tenSP)
         {

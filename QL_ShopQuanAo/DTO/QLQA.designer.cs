@@ -1809,6 +1809,8 @@ namespace DTO
 		
 		private System.Nullable<int> _SOLUONG;
 		
+		private string _SIZE;
+		
 		private System.Nullable<double> _DONGIA;
 		
 		private string _HINHANH;
@@ -1831,6 +1833,8 @@ namespace DTO
     partial void OnTENSPChanged();
     partial void OnSOLUONGChanging(System.Nullable<int> value);
     partial void OnSOLUONGChanged();
+    partial void OnSIZEChanging(string value);
+    partial void OnSIZEChanged();
     partial void OnDONGIAChanging(System.Nullable<double> value);
     partial void OnDONGIAChanged();
     partial void OnHINHANHChanging(string value);
@@ -1904,6 +1908,26 @@ namespace DTO
 					this._SOLUONG = value;
 					this.SendPropertyChanged("SOLUONG");
 					this.OnSOLUONGChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIZE", DbType="NVarChar(10)")]
+		public string SIZE
+		{
+			get
+			{
+				return this._SIZE;
+			}
+			set
+			{
+				if ((this._SIZE != value))
+				{
+					this.OnSIZEChanging(value);
+					this.SendPropertyChanging();
+					this._SIZE = value;
+					this.SendPropertyChanged("SIZE");
+					this.OnSIZEChanged();
 				}
 			}
 		}
@@ -2313,22 +2337,22 @@ namespace DTO
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _Nam;
+		private int _THANG;
 		
-		private int _Thang;
+		private int _NAM;
 		
-		private int _Doanhthu;
+		private System.Nullable<int> _DOANHTHU;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnNamChanging(int value);
-    partial void OnNamChanged();
-    partial void OnThangChanging(int value);
-    partial void OnThangChanged();
-    partial void OnDoanhthuChanging(int value);
-    partial void OnDoanhthuChanged();
+    partial void OnTHANGChanging(int value);
+    partial void OnTHANGChanged();
+    partial void OnNAMChanging(int value);
+    partial void OnNAMChanged();
+    partial void OnDOANHTHUChanging(System.Nullable<int> value);
+    partial void OnDOANHTHUChanged();
     #endregion
 		
 		public THONGKE()
@@ -2336,62 +2360,62 @@ namespace DTO
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nam", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Nam
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_THANG", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int THANG
 		{
 			get
 			{
-				return this._Nam;
+				return this._THANG;
 			}
 			set
 			{
-				if ((this._Nam != value))
+				if ((this._THANG != value))
 				{
-					this.OnNamChanging(value);
+					this.OnTHANGChanging(value);
 					this.SendPropertyChanging();
-					this._Nam = value;
-					this.SendPropertyChanged("Nam");
-					this.OnNamChanged();
+					this._THANG = value;
+					this.SendPropertyChanged("THANG");
+					this.OnTHANGChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thang", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Thang
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NAM", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int NAM
 		{
 			get
 			{
-				return this._Thang;
+				return this._NAM;
 			}
 			set
 			{
-				if ((this._Thang != value))
+				if ((this._NAM != value))
 				{
-					this.OnThangChanging(value);
+					this.OnNAMChanging(value);
 					this.SendPropertyChanging();
-					this._Thang = value;
-					this.SendPropertyChanged("Thang");
-					this.OnThangChanged();
+					this._NAM = value;
+					this.SendPropertyChanged("NAM");
+					this.OnNAMChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Doanhthu", DbType="Int NOT NULL")]
-		public int Doanhthu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DOANHTHU", DbType="Int")]
+		public System.Nullable<int> DOANHTHU
 		{
 			get
 			{
-				return this._Doanhthu;
+				return this._DOANHTHU;
 			}
 			set
 			{
-				if ((this._Doanhthu != value))
+				if ((this._DOANHTHU != value))
 				{
-					this.OnDoanhthuChanging(value);
+					this.OnDOANHTHUChanging(value);
 					this.SendPropertyChanging();
-					this._Doanhthu = value;
-					this.SendPropertyChanged("Doanhthu");
-					this.OnDoanhthuChanged();
+					this._DOANHTHU = value;
+					this.SendPropertyChanged("DOANHTHU");
+					this.OnDOANHTHUChanged();
 				}
 			}
 		}
@@ -2544,7 +2568,11 @@ namespace DTO
 		
 		private System.Nullable<int> _SOLUONG;
 		
+		private string _SIZE;
+		
 		private System.Nullable<double> _DONGIA;
+		
+		private string _HINHANH;
 		
 		private string _NSX;
 		
@@ -2602,6 +2630,22 @@ namespace DTO
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIZE", DbType="NVarChar(10)")]
+		public string SIZE
+		{
+			get
+			{
+				return this._SIZE;
+			}
+			set
+			{
+				if ((this._SIZE != value))
+				{
+					this._SIZE = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DONGIA", DbType="Float")]
 		public System.Nullable<double> DONGIA
 		{
@@ -2614,6 +2658,22 @@ namespace DTO
 				if ((this._DONGIA != value))
 				{
 					this._DONGIA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HINHANH", DbType="NVarChar(MAX)")]
+		public string HINHANH
+		{
+			get
+			{
+				return this._HINHANH;
+			}
+			set
+			{
+				if ((this._HINHANH != value))
+				{
+					this._HINHANH = value;
 				}
 			}
 		}

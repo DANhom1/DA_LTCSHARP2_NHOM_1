@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using BUS;
 using System.Data.Common;
 
 namespace GUI
@@ -17,6 +18,14 @@ namespace GUI
     {
         BLLHoaDon bllhoadon = new BLLHoaDon();
         QLQADataContext qlqa = new QLQADataContext();
+        private static int mAHD;
+        BUSKhachHang kh = new BUSKhachHang();
+        
+        public static int MAHD
+        {
+            get { return HoaDon.mAHD; }
+            set { HoaDon.mAHD = value; }
+        }
         public HoaDon()
         {
             InitializeComponent();
@@ -82,14 +91,31 @@ namespace GUI
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtmaHD.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            //dtpNT.Value.ToString("dd/MM/yyyy")= dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            DateTime datens = DateTime.Parse(dataGridView1.CurrentRow.Cells[1].Value.ToString());
-            dtpNT.Value = DateTime.Parse(datens.ToShortDateString());
-            txt_THHTOAN.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            CBo_TT.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            cbo_MaKH.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            cb_manv.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            //txtmaHD.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            ////dtpNT.Value.ToString("dd/MM/yyyy")= dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //DateTime datens = DateTime.Parse(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+            //dtpNT.Value = DateTime.Parse(datens.ToShortDateString());
+            //txt_THHTOAN.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            //CBo_TT.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            //cbo_MaKH.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            //cb_manv.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                //TODO - Button Clicked - Execute Code Here
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                //Đưa dữ liệu vào 
+                MAHD = int.Parse(row.Cells[1].Value.ToString());
+                ChiTietHoaDon childForm = new ChiTietHoaDon();
+                childForm.MdiParent = this.ParentForm;
+                childForm.Dock = DockStyle.Fill;
+                childForm.BringToFront();
+                childForm.Show();
+                
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -114,5 +140,18 @@ namespace GUI
             }
                 dataGridView1.DataSource = bllhoadon.TimKiem(txtTimKiem.Text);
             }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            txtmaHD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //dtpNT.Value.ToString("dd/MM/yyyy")= dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            DateTime datens = DateTime.Parse(dataGridView1.CurrentRow.Cells[2].Value.ToString());
+            dtpNT.Value = DateTime.Parse(datens.ToShortDateString());
+            txt_THHTOAN.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            CBo_TT.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            cbo_MaKH.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            cb_manv.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+
         }
     }
+}

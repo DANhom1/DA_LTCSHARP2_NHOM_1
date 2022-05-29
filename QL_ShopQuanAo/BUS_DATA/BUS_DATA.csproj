@@ -43,6 +43,7 @@
     <Compile Include="BUSCTHD.cs" />
     <Compile Include="BUSHoaDon.cs" />
     <Compile Include="BUSKhachHang.cs" />
+    <Compile Include="BUSNhanVien.cs" />
     <Compile Include="BUSSanPham.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Data.cs" />

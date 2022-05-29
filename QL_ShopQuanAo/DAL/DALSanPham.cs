@@ -19,21 +19,29 @@ namespace DAL
             List<SANPHAM> kq = qlqa.SANPHAMs.Select(t => t).ToList<SANPHAM>();
             var kqnew = kq.ConvertAll(m => new View_SanPham()
             {
-                MASP=m.MASP,
-                TENSP=m.TENSP,
-                SOLUONG=m.SOLUONG,
-                DONGIA=m.DONGIA,
-                NSX=m.NSX,
-                MALSP=m.MALSP
+                MASP = m.MASP,
+                TENSP = m.TENSP,
+                SOLUONG = m.SOLUONG,
+                SIZE=m.SIZE,
+                DONGIA = m.DONGIA,
+                HINHANH=m.HINHANH,
+                NSX = m.NSX,
+                MALSP = m.MALSP
             });
             return kqnew.ToList<View_SanPham>();
         }
-        public void ThemSanPham(string tenSP,int soluong, float dongia, string nsx, string malsp)
+        //public List<SANPHAM> LoadSanPham()
+        //{
+        //    return qlqa.SANPHAMs.Select(t => t).ToList();
+        //}
+        public void ThemSanPham(string tenSP,int soluong, string size, float dongia, string hinhanh, string nsx, string malsp)
         {
             SANPHAM sp = new SANPHAM();
             sp.TENSP = tenSP;
             sp.SOLUONG = soluong;
+            sp.SIZE = size;
             sp.DONGIA = dongia;
+            sp.HINHANH = hinhanh;
             sp.NSX = nsx;
             sp.MALSP = malsp;
             qlqa.SANPHAMs.InsertOnSubmit(sp);
@@ -45,13 +53,15 @@ namespace DAL
             qlqa.SANPHAMs.DeleteOnSubmit(xoa);
             qlqa.SubmitChanges();
         }
-        public void SuaSanPham(int maSP, string tenSP, int soluong, float dongia, string nsx, string malsp)
+        public void SuaSanPham(int maSP,string tenSP, int soluong, string size, float dongia, string hinhanh, string nsx, string malsp)
         {
             SANPHAM sp = new SANPHAM();
             var sua = qlqa.SANPHAMs.Single(t => t.MASP == maSP);
             sua.TENSP = tenSP;
             sua.SOLUONG = soluong;
+            sua.SIZE = size;
             sua.DONGIA = dongia;
+            sua.HINHANH = hinhanh;
             sua.NSX = nsx;
             sua.MALSP = malsp;
             qlqa.SubmitChanges();

@@ -11,7 +11,6 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\BUS_DATA.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\Custom.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DAL.pdb
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\bin\Debug\DTO.pdb
-D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.BanHang.resources
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.DangNhap.resources
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.DanhMuc.resources
@@ -29,3 +28,7 @@ D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.TienThua.r
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.exe
 D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.pdb
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.ChiTietHoaDon.resources
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.Bill.resources
+D:\PTPM_ThongMinh\DA_LTCSHARP2_NHOM_1\QL_ShopQuanAo\GUI\obj\Debug\GUI.KhachHang.resources

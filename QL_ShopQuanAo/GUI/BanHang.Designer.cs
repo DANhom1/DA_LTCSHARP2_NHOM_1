@@ -70,6 +70,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txt_sdt = new System.Windows.Forms.TextBox();
             this.btnTT = new Custom.ButonQuanAo();
+            this.btnXuatHD = new Custom.ButonQuanAo();
+            this.btnHDNew = new Custom.ButonQuanAo();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_hd)).BeginInit();
@@ -599,11 +601,54 @@
             this.btnTT.UseVisualStyleBackColor = false;
             this.btnTT.Click += new System.EventHandler(this.btnTT_Click);
             // 
+            // btnXuatHD
+            // 
+            this.btnXuatHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnXuatHD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnXuatHD.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnXuatHD.BorderRadius = 20;
+            this.btnXuatHD.BorderSize = 0;
+            this.btnXuatHD.FlatAppearance.BorderSize = 0;
+            this.btnXuatHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXuatHD.ForeColor = System.Drawing.Color.White;
+            this.btnXuatHD.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatHD.Image")));
+            this.btnXuatHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatHD.Location = new System.Drawing.Point(811, 772);
+            this.btnXuatHD.Name = "btnXuatHD";
+            this.btnXuatHD.Size = new System.Drawing.Size(198, 55);
+            this.btnXuatHD.TabIndex = 95;
+            this.btnXuatHD.Text = "In Hoá Đơn";
+            this.btnXuatHD.TextColor = System.Drawing.Color.White;
+            this.btnXuatHD.UseVisualStyleBackColor = false;
+            // 
+            // btnHDNew
+            // 
+            this.btnHDNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnHDNew.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnHDNew.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHDNew.BorderRadius = 20;
+            this.btnHDNew.BorderSize = 0;
+            this.btnHDNew.FlatAppearance.BorderSize = 0;
+            this.btnHDNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHDNew.ForeColor = System.Drawing.Color.White;
+            this.btnHDNew.Image = ((System.Drawing.Image)(resources.GetObject("btnHDNew.Image")));
+            this.btnHDNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHDNew.Location = new System.Drawing.Point(575, 772);
+            this.btnHDNew.Name = "btnHDNew";
+            this.btnHDNew.Size = new System.Drawing.Size(198, 55);
+            this.btnHDNew.TabIndex = 96;
+            this.btnHDNew.Text = "Hoá Đơn Mới";
+            this.btnHDNew.TextColor = System.Drawing.Color.White;
+            this.btnHDNew.UseVisualStyleBackColor = false;
+            this.btnHDNew.Click += new System.EventHandler(this.btnHDNew_Click);
+            // 
             // BanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1147, 659);
+            this.ClientSize = new System.Drawing.Size(1431, 839);
+            this.Controls.Add(this.btnHDNew);
+            this.Controls.Add(this.btnXuatHD);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnTT);
             this.Controls.Add(this.txtTT);
@@ -675,5 +720,7 @@
         private Custom.ButonQuanAo btnTaoKH;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txt_sdt;
+        private Custom.ButonQuanAo btnXuatHD;
+        private Custom.ButonQuanAo btnHDNew;
     }
 }

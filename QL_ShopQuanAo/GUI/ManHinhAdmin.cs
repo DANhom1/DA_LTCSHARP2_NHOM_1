@@ -80,11 +80,13 @@ namespace GUI
                 //matk = taikhoan.MATK;
                 //a.ShowDialog();
                 //this.Dispose();
-
+                //ManHinhNV a = new ManHinhNV();
                 MessageBox.Show("Xin Chào: " + taikhoan.TENTK);
                 label1.Text = String.Format("NHÂN VIÊN: {0}", taikhoan.TENTK);
                 manv = nv.MANV;
                 tenhienthi = taikhoan.TENTK;
+                //a.ShowDialog();
+                //this.Dispose();
                 nhânViênToolStripMenuItem.Enabled = false;
                 danhMụcToolStripMenuItem.Enabled = false;
                 thốngKêToolStripMenuItem.Enabled = false;
@@ -135,6 +137,12 @@ namespace GUI
         private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BanHang f = new BanHang();
+            f.ShowDialog();
+        }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KhachHang f = new KhachHang();
             f.ShowDialog();
         }
 

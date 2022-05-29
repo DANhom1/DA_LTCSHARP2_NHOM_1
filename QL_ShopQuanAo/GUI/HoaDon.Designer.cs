@@ -51,6 +51,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.MaskedTextBox();
             this.btnTimKiem = new Custom.ButonQuanAo();
+            this.CL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CL2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CL3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CL4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CL5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CL6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -202,15 +209,27 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CL1,
+            this.CL2,
+            this.CL3,
+            this.CL4,
+            this.CL5,
+            this.CL6,
+            this.Column5});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(4, 27);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1349, 338);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // btnDong
             // 
@@ -370,6 +389,56 @@
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
+            // CL1
+            // 
+            this.CL1.DataPropertyName = "MaHD";
+            this.CL1.HeaderText = "Mã Hoá Đơn";
+            this.CL1.Name = "CL1";
+            this.CL1.ReadOnly = true;
+            // 
+            // CL2
+            // 
+            this.CL2.DataPropertyName = "NGTAO";
+            this.CL2.HeaderText = "Ngày Tạo";
+            this.CL2.Name = "CL2";
+            this.CL2.ReadOnly = true;
+            // 
+            // CL3
+            // 
+            this.CL3.DataPropertyName = "THANHTOAN";
+            this.CL3.HeaderText = "Thanh Toán";
+            this.CL3.Name = "CL3";
+            this.CL3.ReadOnly = true;
+            // 
+            // CL4
+            // 
+            this.CL4.DataPropertyName = "TINHTRANG";
+            this.CL4.HeaderText = "Tình Trạng";
+            this.CL4.Name = "CL4";
+            this.CL4.ReadOnly = true;
+            // 
+            // CL5
+            // 
+            this.CL5.DataPropertyName = "MAKH";
+            this.CL5.HeaderText = "Mã Khách Hàng";
+            this.CL5.Name = "CL5";
+            this.CL5.ReadOnly = true;
+            // 
+            // CL6
+            // 
+            this.CL6.DataPropertyName = "MANV";
+            this.CL6.HeaderText = "Mã Nhân Viên";
+            this.CL6.Name = "CL6";
+            this.CL6.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Chi Tiết";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Text = "Chi Tiết";
+            this.Column5.UseColumnTextForButtonValue = true;
+            // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -431,5 +500,12 @@
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.MaskedTextBox txtTimKiem;
         private Custom.ButonQuanAo btnTimKiem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CL6;
+        private System.Windows.Forms.DataGridViewButtonColumn Column5;
     }
 }

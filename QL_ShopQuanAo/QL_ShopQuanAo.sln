@@ -15,6 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_DATA", "BUS_DATA\BUS_DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A1C469D2-C150-4D85-9BDE-04376BA4C43A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Report", "Report", "{7E020910-6709-4D2A-9EB2-DD12F4B80EF1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\Bill.rpt = ..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\Bill.rpt
+		..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\bill1.cs = ..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\bill1.cs
+		..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\SanPhamHetHang.cs = ..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\SanPhamHetHang.cs
+		..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\SanPhamHetHang.rpt = ..\..\..\Đồ Án .NET\QuanLyCuaHangMyPham\QLMyPham\QLMyPham\Report\SanPhamHetHang.rpt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

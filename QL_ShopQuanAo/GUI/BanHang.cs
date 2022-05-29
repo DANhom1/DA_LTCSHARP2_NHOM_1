@@ -128,10 +128,11 @@ namespace GUI
                 btnThem.Enabled = true;
                 btnXoa.Enabled = true;
                 btnSua.Enabled = true;
-                //btnTao.Enabled = false;
-                //cb_makh.Enabled = false;
-                //txt_sdt.Enabled = false;
-                //btnTaoKH.Enabled = false;
+
+                btnTao.Enabled = false;
+                cb_makh.Enabled = false;
+                txt_sdt.Enabled = false;
+                btnTaoKH.Enabled = false;
 
                 System.Data.DataTable dt = new System.Data.DataTable();
                 try
@@ -156,6 +157,8 @@ namespace GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            btnXuatHD.Enabled = false;
+            btnHDNew.Enabled = false;
             if (cb_mahang.Text.Length == 0 || txt_soluong.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin trước khi thêm!");
@@ -189,6 +192,8 @@ namespace GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            btnXuatHD.Enabled = false;
+            btnHDNew.Enabled = false;
             if (MessageBox.Show("Bạn muốn xóa?", "Thông báo",
                              MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
                              MessageBoxDefaultButton.Button2) ==
@@ -216,6 +221,8 @@ namespace GUI
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            btnXuatHD.Enabled = false;
+            btnHDNew.Enabled = false;
             if (cb_mahang.Text.Length == 0 || txt_soluong.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
@@ -279,8 +286,11 @@ namespace GUI
             }
                 TienKhach tKhach = new TienKhach();
                 tKhach.ShowDialog(); // lấy được số tiền khách đã đưa
+                btnXuatHD.Enabled = true;
+                btnHDNew.Enabled = true;
                 hd.updateHDBH(MAHDBH);
                 hd.themvaothongke(tienhang, month, year);
+
         }
 
         private void cb_mahang_SelectedIndexChanged(object sender, EventArgs e)
@@ -335,6 +345,24 @@ namespace GUI
         {
             cb_mahang.Text = dtv_hd.CurrentRow.Cells[4].Value.ToString();
             txt_soluong.Text = dtv_hd.CurrentRow.Cells[6].Value.ToString();
+        }
+
+        private void btnHDNew_Click(object sender, EventArgs e)
+        {
+            txt_sdt.Enabled = true;
+            cb_makh.Enabled = true;
+            btnTao.Enabled = true;
+            btnTaoKH.Enabled = true;
+
+            txt_soluong.Enabled = false;
+            cb_mahang.Enabled = false;
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+
+            btnHDNew.Enabled = false;
+            btnTT.Enabled = false;
+            btnXuatHD.Enabled = false;
         }
     }
 }
